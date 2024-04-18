@@ -17,7 +17,7 @@ describe('Weather API Tests', () => {
     });
   });
   it('Test the APIs ability to return a 5-day forecast for a specified city', () => {
-    weatherApi.getForecastByCityName('Paris').then((response) => {
+    weatherApi.getForecastByCityName('Colombia').then((response) => {
       expect(response.status).to.eq(200);
       expect(response.body).to.have.property('list');
       expect(response.body.list.length).to.be.greaterThan(0);
